@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ovini's Domain - Página do Vídeo</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .container-principal {
+      width: 580px;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      margin: 0 auto;
+    }
+
+    header {
+      width: 580px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      background: #222;
+      color: white;
+      padding: 20px 35px;
+      gap: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+      border-radius: 8px;
+    }
+
+    header img {
+      width: 60px;
+      height: 60px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    header h1 {
+      font-size: 26px;
+      user-select: none;
+    }
+
+    /* Esse espaçamento evita que o conteúdo fique atrás do header fixo */
+    .spacer-top {
+      height: 20px;
+    }
+
+    main {
+      background: #fff;
+      padding: 25px 35px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      font-size: 17px;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 580px;
+      margin: 0 auto;
+    }
+
+    main video {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    }
+
+    .texto-explicativo {
+      line-height: 1.5;
+    }
+
+    footer {
+      width: 580px;
+      margin: 20px auto 0 auto;
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 15px 20px;
+      font-size: 14px;
+      user-select: none;
+      border-radius: 0 0 8px 8px;
+    }
+
+    @media (max-width: 600px) {
+      .container-principal,
+      main,
+      header,
+      footer {
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 0;
+      }
+
+      header {
+        padding: 15px 20px;
+      }
+
+      header h1 {
+        font-size: 22px;
+      }
+
+      main {
+        padding: 20px 25px;
+        font-size: 15px;
+      }
+
+      .texto-explicativo {
+        font-size: 15px;
+      }
+
+      footer {
+        font-size: 13px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="/images/gojoLogoNOBK.png" alt="Logo do site" />
+    <h1>Ovini's Domain</h1>
+  </header>
+
+  <div class="spacer-top"></div>
+
+  <div class="container-principal">
+    <main>
+      <video controls>
+        <source src="videos/gojo-expansao.mp4" type="video/mp4" />
+        Seu navegador não suporta vídeo HTML5.
+      </video>
+      <div class="texto-explicativo">
+        <p>
+          Aqui você coloca o texto explicativo da expansão de domínio do Satoru Gojo.
+          Pode detalhar os efeitos, contexto, e qualquer coisa que quiser compartilhar.
+        </p>
+      </div>
+    </main>
+  </div>
+
+  <footer>
+    <p>© 2025 Vinicius. Todos os direitos reservados.</p>
+    <p>Contato: <a href="mailto:viniciuscandido375@gmail.com" style="color: lightblue;">viniciuscandido375@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/Ovini8894" target="_blank" style="color: lightblue;">Ovini8894</a></p>
+  </footer>
+
+</body>
+</html>
