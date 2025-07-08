@@ -4,6 +4,18 @@
   <meta charset="UTF-8" />
   <title>Ovini's Domain - Página do Vídeo</title>
   <style>
+    body::before {
+  content: "";
+  position: fixed;  /* fixo pra não mexer quando rolar a página */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(/images/SUKUNABACKGROUND.jpg) no-repeat center center;
+  background-size: cover;
+  filter: blur(8px);   /* aqui você controla o quanto fica desfocado */
+  z-index: -1;         /* fica atrás de todo o conteúdo */
+  }
     * {
       box-sizing: border-box;
       margin: 0;
@@ -13,11 +25,12 @@
     body, html {
       height: 100%;
       font-family: Arial, sans-serif;
-      background: #f5f5f5;
+      background: #b22f18;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
+      border-radius: 30px;
     }
 
     .container-principal {
@@ -59,12 +72,12 @@
     }
 
     main {
-      background: #fff;
+      background: #d63a1c;
       padding: 25px 35px;
       border-radius: 8px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
       font-size: 17px;
-      color: #333;
+      color: #ffffff;
       display: flex;
       flex-direction: column;
       gap: 20px;
@@ -140,13 +153,12 @@
   <div class="container-principal">
     <main>
       <video controls>
-        <source src="videos/gojo-expansao.mp4" type="video/mp4" />
+        <source src="/videos/sukuna-domain.mp4" type="video/mp4" />
         Seu navegador não suporta vídeo HTML5.
       </video>
       <div class="texto-explicativo">
         <p>
-          Aqui você coloca o texto explicativo da expansão de domínio do Satoru Gojo.
-          Pode detalhar os efeitos, contexto, e qualquer coisa que quiser compartilhar.
+          Sukuna usa a expansão de domínio 「伏魔御厨子」(Fukuma Mizushi), que cria um espaço aberto onde ele pode atacar livremente, sem barreiras. Na luta contra Mahoraga, ele mostrou ataques de longa distância e rapidez mortal. Fato: essa técnica é diferente porque não prende o inimigo, permitindo ataques em área ampla.
         </p>
       </div>
     </main>
