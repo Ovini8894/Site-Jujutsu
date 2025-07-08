@@ -5,25 +5,25 @@
   <title>Ovini's Domain</title>
   <style>
     body {
-  position: relative;
-  min-height: 100vh;
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-}
+      position: relative;
+      min-height: 100vh;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
 
-body::before {
-  content: "";
-  position: fixed;  /* fixo pra não mexer quando rolar a página */
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url('images/JUJUTSUBACKGROUND.jpg') no-repeat center center;
-  background-size: cover;
-  filter: blur(8px);   /* aqui você controla o quanto fica desfocado */
-  z-index: -1;         /* fica atrás de todo o conteúdo */
-}
+    body::before {
+      content: "";
+      position: fixed;  /* fixo pra não mexer quando rolar a página */
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('images/JUJUTSUBACKGROUND.jpg') no-repeat center center;
+      background-size: cover;
+      filter: blur(8px);
+      z-index: -1;
+    }
 
     * {
       box-sizing: border-box;
@@ -41,14 +41,13 @@ body::before {
       flex-direction: column;
       border-radius: 50px;
       padding: 30px;
-
     }
 
     .container-principal {
-      width: 580px; /* aumentei pra deixar mais largo */
+      width: 580px;
       display: flex;
       flex-direction: column;
-      gap: 25px; /* mais espaço entre header, texto e botões */
+      gap: 25px;
     }
 
     header {
@@ -88,17 +87,17 @@ body::before {
     .botoes-container {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 30px; /* mais espaço entre os botões */
+      gap: 30px;
       background: #2E0854;
-      padding: 45px; /* maior altura da caixa de botões */
+      padding: 45px;
       border-radius: 8px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.4);
     }
 
     .botao-personalizado {
       position: relative;
-      width: 220px; /* aumentei os botões */
-      height: 70px;  /* mais alto */
+      width: 220px;
+      height: 70px;
       border-radius: 22px;
       border: none;
       color: white;
@@ -116,16 +115,14 @@ body::before {
       user-select: none;
       margin: 0 auto;
 
-      /* Aqui criamos uma variável CSS para a imagem de fundo, que será definida direto no botão */
-      --bg-image: url('../images/gojoBACK.jpeg');
+      --bg-image: url('images/gojoBACK.jpeg');
     }
 
-    /* Pseudo-elemento para aplicar a imagem de fundo desfocada usando a variável CSS */
     .botao-personalizado::before {
       content: "";
       position: absolute;
       top: 0; left: 0; right: 0; bottom: 0;
-      background-image: var(--bg-image); /* Usa a variável aqui */
+      background-image: var(--bg-image);
       background-size: cover;
       background-position: center;
       filter: blur(3px);
@@ -186,7 +183,7 @@ body::before {
 
   <div class="container-principal">
     <header>
-      <img src="/images/gojoLogoNOBK.png" alt="Logo do site" />
+      <img src="images/gojoLogoNOBK.png" alt="Logo do site" />
       <h1 style="color: white;">Ovini's Domain</h1>
     </header>
 
@@ -195,20 +192,18 @@ body::before {
     </div>
 
     <div class="botoes-container">
-      <button class="botao-personalizado" style="--bg-image: url('../images/gojoBACK.jpeg')" onclick="window.location.href='domains/gojo.html'">Satoru Gojo</button>
-      <button class="botao-personalizado" style="--bg-image: url('../images/sukunaBACK.jpeg')"onclick="window.location.href='domains/sukuna.html'">Ryomen Sukuna</button>
-      <button class="botao-personalizado" style="--bg-image: url('../images/megumiBACK.jpeg')" onclick="window.location.href='domains/megumi.html'">Fushiguro Megumi</button>
-      <button class="botao-personalizado" style="--bg-image: url('../images/mahitoBACK.jpeg')" onclick="window.location.href='domains/mahito.html'">Mahito</button>
-      <button class="botao-personalizado" style="--bg-image: url('../images/dagonBACK.jpeg')" onclick="window.location.href='domains/dagon.html'">Dagon</button>
-      <button class="botao-personalizado" style="--bg-image: url('../images/jogoBACK.jpeg')" onclick="window.location.href='domains/jogo.html'">Jogo</button>
+      <button class="botao-personalizado" style="--bg-image: url('images/gojoBACK.jpeg')" onclick="window.location.href='domains/gojo.html'">Satoru Gojo</button>
+      <button class="botao-personalizado" style="--bg-image: url('images/sukunaBACK.jpeg')" onclick="window.location.href='domains/sukuna.html'">Ryomen Sukuna</button>
+      <button class="botao-personalizado" style="--bg-image: url('images/megumiBACK.jpeg')" onclick="window.location.href='domains/megumi.html'">Fushiguro Megumi</button>
+      <button class="botao-personalizado" style="--bg-image: url('images/mahitoBACK.jpeg')" onclick="window.location.href='domains/mahito.html'">Mahito</button>
+      <button class="botao-personalizado" style="--bg-image: url('images/dagonBACK.jpeg')" onclick="window.location.href='domains/dagon.html'">Dagon</button>
+      <button class="botao-personalizado" style="--bg-image: url('images/jogoBACK.jpeg')" onclick="window.location.href='domains/jogo.html'">Jogo</button>
     </div>
   </div>
 
   <footer>
-    <p>© 2025 Vinicius. Todos os direitos reservados.</p>
-    <p>Contato: <a href="mailto:vinicius@email.com" style="color: lightblue;">viniciuscandido375@gmail.com</a> |
+    <p>Contato: <a href="mailto:viniciuscandido375@gmail.com" style="color: lightblue;">viniciuscandido375@gmail.com</a> |</p>
     <p>Contato: vinicius@email.com | <a href="https://github.com/Ovini8894" target="_blank" style="color: lightblue;">GitHub</a></p>
-
   </footer>
 
 </body>
