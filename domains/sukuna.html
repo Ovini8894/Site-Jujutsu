@@ -5,17 +5,17 @@
   <title>Ovini's Domain - Página do Vídeo</title>
   <style>
     body::before {
-  content: "";
-  position: fixed;  /* fixo pra não mexer quando rolar a página */
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url(images/SUKUNABACKGROUND.jpeg) no-repeat center center;
-  background-size: cover;
-  filter: blur(8px);   /* aqui você controla o quanto fica desfocado */
-  z-index: -1;         /* fica atrás de todo o conteúdo */
-  }
+      content: "";
+      position: fixed;  /* fixo pra não mexer quando rolar a página */
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url(../images/SUKUNABACKGROUND.jpg) no-repeat center center;
+      background-size: cover;
+      filter: blur(8px);   /* aqui você controla o quanto fica desfocado */
+      z-index: -1;         /* fica atrás de todo o conteúdo */
+    }
     * {
       box-sizing: border-box;
       margin: 0;
@@ -144,7 +144,7 @@
 <body>
 
   <header>
-    <img src="images/gojoLogoNOBK.png" alt="Logo do site" />
+    <img src="../images/gojoLogoNOBK.png" alt="Logo do site" />
     <h1>Ovini's Domain</h1>
   </header>
 
@@ -153,7 +153,7 @@
   <div class="container-principal">
     <main>
       <video controls>
-        <source src="videos/sukuna-domain.mp4" type="video/mp4" />
+        <source src="../videos/sukuna-domain.mp4" type="video/mp4" />
         Seu navegador não suporta vídeo HTML5.
       </video>
       <div class="texto-explicativo">
